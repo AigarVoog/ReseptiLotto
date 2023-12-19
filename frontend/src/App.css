@@ -1,0 +1,29 @@
+#root {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.slide-in {
+  animation: slide-in-animation 0.5s ease-out;
+}
+@keyframes slide-in-animation {
+  0% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+}
+
+.slide-out {
+  animation: slide-out-animation 0.5s ease-out forwards;
+}
+@keyframes slide-out-animation {
+  0% {
+    transform: translateX(0vw);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
